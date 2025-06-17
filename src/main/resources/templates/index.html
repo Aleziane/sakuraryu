@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--  <link-->
+  <!--    rel="stylesheet"-->
+  <!--    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"-->
+  <!--  >-->
+</head>
+<body>
+<header>
+</header>
+
+<!-- carousel -->
+<div class="carousel">
+  <!-- list item -->
+  <div class="list">
+    <div class="item" id="item-dojo">
+      <img src="image/img-1.jpg"/>
+      <div class="content">
+        <div class="author">DOJO</div>
+        <div class="title">Sakura Ryu</div>
+        <h1 class="topic">INFOS</h1>
+        <div class="buttons">
+          <button disabled onclick="showSlider('dojo')">INFOS</button>
+          <button onclick="showSlider('stage')">STAGES</button>
+          <button onclick="showSlider('sensei')">SENSEI</button>
+        </div>
+        <div class="des flex">
+          <div>
+            <div>
+              <h3><a href="https://la-marcotte.businessbooster.website/"><i class="fa fa-map-marker"></i> Dojo</a></h3>
+              <p>Complexe La Marcotte<br/>Rue de l'Eglise 12<br/>7950 Chièvres</p>
+            </div>
+            <div>
+              <h3>Horaires</h3>
+              <p>Tous les Jeudis - 19h30 - 21h</p>
+            </div>
+          </div>
+          <div class="dojo-div">
+            <h3>Contacts</h3>
+            <p><i class="fa fa-facebook-f"></i><a href="https://www.facebook.com/profile.php?id=61550264155284">
+              Facebook</a></p>
+            <p><i class='fa fa-phone'></i><span id="putTelHere"><a href="javascript:void(0)" onclick="revealPhone()"> tel</a></span>
+            </p>
+            <p><i class='fa fa-envelope-open'></i><span id="putMailHere"><a href="javascript:void(0)"
+                                                                            onclick="revealMail()"> mail</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="item-stage">
+      <img src="image/img-2.jpg">
+      <div class="content">
+        <div class="author">DOJO</div>
+        <div class="title">Sakura Ryu</div>
+        <h1 class="topic">STAGES</h1>
+        <div class="buttons">
+          <button onclick="showSlider('dojo')">INFOS</button>
+          <button disabled onclick="showSlider('stage')">STAGES</button>
+          <button onclick="showSlider('sensei')">SENSEI</button>
+        </div>
+        <div class="des">
+          <p>Nous organisons des stages de perfectionnement du maniement des armes (Jo : Boken)
+            <br/>Les stages sont ouverts à tous en ordre de licence</p>
+          <div>
+            <h3>Prochains stages</h3>
+            <table style="min-width:80%">
+              <tr>
+                <th>Horaires</th>
+                <th></th>
+                <th>Lieu</th>
+                <th>Sensei</th>
+              </tr>
+              <tr>
+                <td>Samedi 20 Septembre 2025</td>
+                <td>14h - 16h</td>
+                <td><a href="https://la-marcotte.businessbooster.website/"><i class="fa fa-map-marker"></i> Dojo</a>
+                </td>
+                <td>Mickael Devisch</td>
+              </tr>
+              <tr>
+                <td>Samedi 25 Octobre 2025</td>
+                <td>14h - 16h</td>
+                <td><a href="https://la-marcotte.businessbooster.website/"><i class="fa fa-map-marker"></i> Dojo</a>
+                </td>
+                <td>Mickael Devisch</td>
+              </tr>
+              <tr>
+                <td>Samedi 15 Novembre 2025</td>
+                <td>14h - 16h</td>
+                <td><a href="https://la-marcotte.businessbooster.website/"><i class="fa fa-map-marker"></i> Dojo</a>
+                </td>
+                <td>Mickael Devisch</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item" id="item-sensei">
+      <img src="image/img-3.jpg">
+      <div class="content">
+        <div class="author">DOJO</div>
+        <div class="title">Sakura Ryu</div>
+        <h1 class="topic">SENSEI</h1>
+        <div class="buttons">
+          <button onclick="showSlider('dojo')">INFOS</button>
+          <button onclick="showSlider('stage')">STAGES</button>
+          <button disabled onclick="showSlider('sensei')">SENSEI</button>
+        </div>
+        <div class="des">
+          <p>L’Aïkido Iwama Ryu trouve ses racines dans le petit village d’Iwama, au Japon, où Morihei Ueshiba,
+            fondateur de l’Aïkido, a vécu et enseigné durant les dernières années de sa vie. Ce lieu est reconnu comme
+            le berceau de la forme la plus complète et la plus systématisée de son art. C’est là que Morihiro Saito, son
+            élève proche pendant plus de vingt ans, a structuré et préservé l’enseignement du fondateur, en mettant
+            l’accent sur la cohérence entre le travail à mains nues (taijutsu) et celui des armes (ken et jo).
+          </p>
+          <p> Ce style se distingue par une approche rigoureuse et technique. L’apprentissage passe par l’étude
+            approfondie des formes de base (kihon), en insistant sur la précision, la posture et l’engagement corporel.
+            L’enseignement met en relation directe les mouvements des armes et ceux à mains nues, dans une logique de
+            continuité et de compréhension du centre. Cela donne à la pratique une structure claire, propice à la
+            progression, sans pour autant négliger l’aspect martial du mouvement.
+          </p>
+          <p> Loin d’une vision décorative ou “douce”, l’Aïkido Iwama Ryu conserve un rapport franc à la distance, au
+            timing et à la stabilité. La pratique ne cherche pas l’effet spectaculaire, mais la justesse et la présence
+            dans le mouvement. Chaque geste a un sens, hérité d’une tradition martiale japonaise, et transmis avec
+            attention au fil des générations.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enseignant - Sakuraryu</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+  <style>
+    :root {
+      --primary: #8bc34a;        /* vert thé */
+      --secondary: #5d4037;      /* brun bois */
+      --background-color: #fce4ec; /* rose pâle */
+      --muted-color: #263238;    /* gris anthracite */
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--muted-color);
+      font-family: 'Georgia', serif;
+    }
+
+    .portrait {
+      max-width: 200px;
+      border-radius: 10px;
+      margin: 1.5rem auto;
+      display: block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .enseignant {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .enseignant h1 {
+      color: var(--secondary);
+    }
+
+    .enseignant h2 {
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+
+    .enseignant p {
+      max-width: 600px;
+      margin: 1.5rem auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="container enseignant">
+  <h1>Enseignant</h1>
+
+  <img src="/images/enseignant.jpg" alt="Portrait enseignant" class="portrait" />
+
+  <h2>Yoshio Tanaka</h2>
+
+  <p>
+    Yoshio Tanaka est l’enseignant principal du dojo Sakuraryu. Il pratique l’aïkido depuis plus de 30 ans, et transmet l’esprit de l’Iwama Ryu dans le respect de la tradition de Morihiro Saito.
+    Son approche combine rigueur technique, étude des armes et philosophie du mouvement.
+  </p>
+</main>
+
+</body>
+</html>
