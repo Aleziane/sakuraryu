@@ -89,23 +89,19 @@ header a{
     gap: 5px;
     margin-top: 20px;
 }
-.carousel .list .item .buttons button{
+.carousel .list .item .buttons .active{
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
 }
-.carousel .list .item .buttons button:nth-child(2){
+.carousel .list .item .buttons .passive{
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
 }
-.carousel .list .item .buttons button:nth-child(3){
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #eee;
-}
+
 /* arrows */
 .arrows{
     z-index: 999;

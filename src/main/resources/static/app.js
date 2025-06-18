@@ -67,3 +67,4 @@ const phone1 = "mickaeldevisch"
 const phone2 = "@gmail.com"
   span.innerHTML=" "+phone1+phone2
 }
+
